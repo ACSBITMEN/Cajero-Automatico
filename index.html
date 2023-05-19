@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero Automático SS</title>
+</head>
+<body>
+    <h1>Cajero Automático SS</h1>
+
+    <div id="accounts">
+        <h2>Selecciona una cuenta:</h2>
+        <button onclick="selectAccount(0)">Andres SB</button>
+        <button onclick="selectAccount(1)">Linda DM</button>
+        <button onclick="selectAccount(2)">Canela SB</button>
+    </div>
+
+    <div id="login" style="display: none;">
+        <h2>Ingresa el password:</h2>
+        <input type="password" id="passwordInput">
+        <button onclick="login()">Ingresar</button>
+    </div>
+
+    <div id="options" style="display: none;">
+        <h2>Opciones:</h2>
+        <button onclick="checkBalance()">Consultar saldo</button>
+        <button onclick="deposit()">Ingresar monto</button>
+        <button onclick="withdraw()">Retirar monto</button>
+        <button onclick="goBackIndex()">Salir</button>
+    </div>
+
+    <div id="balance" style="display: none;">
+        <h2>Saldo actual:</h2>
+        <p id="balanceAmount"></p>
+        <button onclick="goBack()">Volver</button>
+    </div>
+
+    <div id="deposit" style="display: none;">
+        <h2>Ingresar monto:</h2>
+        <input type="number" id="depositAmount">
+        <button onclick="confirmDeposit()">Confirmar</button>
+        <button onclick="goBack()">Cancelar</button>
+    </div>
+
+    <div id="withdraw" style="display: none;">
+        <h2>Retirar monto:</h2>
+        <input type="number" id="withdrawAmount">
+        <button onclick="confirmWithdraw()">Confirmar</button>
+        <button onclick="goBack()">Cancelar</button>
+    </div>
+
+<script src="cajero.js"></script>
+
+</body>
+</html>
