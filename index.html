@@ -17,7 +17,7 @@
             </ul>
         </nav>
     </header>
-    <h1>WELCOME TO BANK SS</h1> <!--TITULO PRINCIPAL-->
+    <h1 id="titulo">WELCOME TO BANK SS</h1> <!--TITULO PRINCIPAL-->
 
     <div id="accounts"><!--CONTENEDOR CUENTAS -->
         <h2>Selecciona una cuenta:</h2> <!--TITULO SECUNDARIO -->
@@ -42,8 +42,10 @@
     </div>
 
     <div id="balance" style="display: none;"><!--CONTENEDOR SALDO ACTUAL -->
+        <h3 id="oldAmountH3" style="display: none;">Saldo anterior:</h3>
+        <p id="oldAmount" style="display: none;"></p><p id="Amountwithdrawn" style="display: none;"></p>
         <h2>Saldo actual:</h2><!--TITULO SECUNDARIO -->
-        <p id="balanceAmount"></p>
+        <p id="balanceAmount"></p><P id="typeMoney">COP</P>
         <button onclick="goBack()">Volver</button><!--BOTON DE CANCELAR-->
     </div>
 
