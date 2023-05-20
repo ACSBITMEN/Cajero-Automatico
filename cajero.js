@@ -62,7 +62,7 @@ function confirmWithdraw() {
     alert("No tienes suficiente saldo para realizar esta operación.");
     return;
   }
-/*Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10. Es necesario hacer las validaciones pertinentes para que no se rompa esta regla de negocio.*/
+/*Como regla de negocio, el retiro no debe de ser más de $990 y menos de $10. Es necesario hacer las validaciones pertinentes para que no se rompa esta regla de negocio.*/
   if (amount > 990 || amount < 10) {
     alert("El monto a retirar no cumple con las reglas de negocio.");
     return;
@@ -85,5 +85,9 @@ function goBack() {
 /*FUNCION PARA EL BOTON "SALIR AL MENU PRINCIPAL"*/
 function goBackIndex() {
   document.getElementById("accounts").style.display = "block"
+  document.getElementById("login").style.display = "none";
   document.getElementById("options").style.display = "none";
+  document.getElementById("balance").style.display = "none";
+  document.getElementById("deposit").style.display = "none";
+  document.getElementById("withdraw").style.display = "none";
 }

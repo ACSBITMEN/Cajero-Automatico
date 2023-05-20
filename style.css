@@ -1,41 +1,93 @@
+/*Variables en CSS*/
+:root {
+  --main-background: #0C3B97; /*color principal del fondo*/
+  --font-color: #fff; /*Color principal de las letras*/
+  --botton-background: #01B4F6;/*Color principal de las letras*/
+  --Two-color: #F6006B;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif; /* Establece la fuente*/
+    background-color: var(--main-background); /*el color de fondo*/
+    margin: 0; /*elimina el margen predeterminado.*/
+    padding: 0; /*elimina el padding predeterminado.*/
+  }
+
+  .navbar {
+    background-color: var(--main-background);
+    padding: 10px;
+    color: var(--font-color);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+    max-width: 55px;
+  }
+  /* Estilos para el primer elemento li dentro de ul */
+  ul li:first-child {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: var(--font-color);
+    text-decoration: none;
+  }
+  .navbar a button {
+    background-color: var(--main-background);
     margin: 0;
     padding: 0;
   }
-  
+
+  .navbar a button:hover {
+    color: var(--Two-color);
+  }
+
+  /*Titulo principal*/
   h1 {
-    text-align: center;
-    color: #333;
-    padding: 20px 0;
+    text-align: center; /*Centra el texto*/
+    color: var(--font-color); /*establece el color del texto*/
+    padding: 20px 0; /*agrega un padding vertical de 20px y padding horizontal de 0*/
   }
   
   #accounts, #login, #options, #balance, #deposit, #withdraw {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    max-width: 400px; /*Establece el ancho máximo de estos elementos en 400px*/
+    margin: 0 auto; /*los centra horizontalmente en la página*/
+    background-color: var(--main-background); /*establece el color de fondo*/
+    padding: 20px; /*agrega un padding de 20px*/
+    border-radius: 5px; /*agrega un borde redondeado de 5px*/
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); aplica una sombra para dar una apariencia de elevación. */
+    margin-top: 20px; /* Además, agrega un margen superior de 20px para separarlos verticalmente*/
   }
   
   h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 18px; /*Establece el tamaño de fuente en 18px*/
+    margin-bottom: 10px; /*un margen inferior de 10px*/
+    color: var(--font-color); /*el color del texto*/
   }
   
   button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: var(--botton-background); /*Establece el color de fondo*/
+    color: var(--font-color); /* el color del texto*/
+    border: none; /*elimina el borde*/
+    padding: 10px 20px; /*agrega un padding vertical de 10px y padding horizontal de 20px*/
+    font-size: 16px; /*establece el tamaño de fuente en 16px*/
+    border-radius: 5px; /*agrega un borde redondeado de 5px*/
+    cursor: pointer; /*cambia el cursor al puntero*/
+    margin-top: 10px; /* agrega un margen superior de 10px*/
+  }
+
+  button:hover{
+    background-color: var(--Two-color);
   }
   
   input[type="number"],
@@ -50,7 +102,7 @@ body {
   p {
     margin: 0;
     font-size: 16px;
-    color: #333;
+    color: var(--font-color);
     margin-bottom: 10px;
   }
   
@@ -59,7 +111,11 @@ body {
     font-size: 20px;
   }
   
-  #options button,
+  #options button{
+    width: 48%;
+    height: 80px;
+  }
+
   #balance button,
   #deposit button,
   #withdraw button {
@@ -81,4 +137,3 @@ body {
   #accounts button + button {
     margin-top: 10px;
   }
-  

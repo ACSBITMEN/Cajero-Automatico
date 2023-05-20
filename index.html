@@ -4,54 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cajero Automático SS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--ENLACE ICONOS-->
+    <link rel="stylesheet" href="style.css"><!--ENLACE HOJA DE ESTILOS-->
+    <title>ATM BANK SS</title>
 </head>
 <body>
-    <h1>Cajero Automático SS</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">ATM</a></li>
+                <li><a href="#"><button onclick="goBackIndex()"><span class="material-icons">logout</span></button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>WELCOME TO BANK SS</h1> <!--TITULO PRINCIPAL-->
 
-    <div id="accounts">
-        <h2>Selecciona una cuenta:</h2>
-        <button onclick="selectAccount(0)">Andres SB</button>
-        <button onclick="selectAccount(1)">Linda DM</button>
-        <button onclick="selectAccount(2)">Canela SB</button>
+    <div id="accounts"><!--CONTENEDOR CUENTAS -->
+        <h2>Selecciona una cuenta:</h2> <!--TITULO SECUNDARIO -->
+        <button onclick="selectAccount(0)">Cuenta 1</button><!--BOTON DE CUENTA-->
+        <button onclick="selectAccount(1)">Cuenta 2</button><!--BOTON DE CUENTA-->
+        <button onclick="selectAccount(2)">Cuenta 3</button><!--BOTON DE CUENTA-->
     </div>
 
-    <div id="login" style="display: none;">
-        <h2>Ingresa el password:</h2>
+    <div id="login" style="display: none;"><!--CONTENEDOR LOGIN -->
+        <h2>Ingresa el password:</h2><!--TITULO SECUNDARIO -->
         <input type="password" id="passwordInput">
-        <button onclick="login()">Ingresar</button>
+        <button onclick="login()">Ingresar</button><!--BOTON DE INGRESO-->
+        <button onclick="goBackIndex()">Cancelar</button><!--BOTON DE SALIR-->
     </div>
 
-    <div id="options" style="display: none;">
-        <h2>Opciones:</h2>
+    <div id="options" style="display: none;"><!--CONTENEDOR OPCIONES -->
+        <h2>Opciones:</h2><!--TITULO SECUNDARIO -->
         <button onclick="checkBalance()">Consultar saldo</button>
         <button onclick="deposit()">Ingresar monto</button>
         <button onclick="withdraw()">Retirar monto</button>
-        <button onclick="goBackIndex()">Salir</button>
+        <button onclick="goBackIndex()">Salir</button><!--BOTON DE SALIR-->
     </div>
 
-    <div id="balance" style="display: none;">
-        <h2>Saldo actual:</h2>
+    <div id="balance" style="display: none;"><!--CONTENEDOR SALDO ACTUAL -->
+        <h2>Saldo actual:</h2><!--TITULO SECUNDARIO -->
         <p id="balanceAmount"></p>
-        <button onclick="goBack()">Volver</button>
+        <button onclick="goBack()">Volver</button><!--BOTON DE CANCELAR-->
     </div>
 
-    <div id="deposit" style="display: none;">
-        <h2>Ingresar monto:</h2>
+    <div id="deposit" style="display: none;"><!--CONTENEDOR UPDATE -->
+        <h2>Ingresar monto:</h2><!--TITULO SECUNDARIO -->
         <input type="number" id="depositAmount">
         <button onclick="confirmDeposit()">Confirmar</button>
-        <button onclick="goBack()">Cancelar</button>
+        <button onclick="goBack()">Cancelar</button><!--BOTON DE CANCELAR-->
     </div>
 
-    <div id="withdraw" style="display: none;">
-        <h2>Retirar monto:</h2>
+    <div id="withdraw" style="display: none;"><!--CONTENEDOR RETIROS-->
+        <h2>Retirar monto:</h2><!--TITULO SECUNDARIO -->
         <input type="number" id="withdrawAmount">
         <button onclick="confirmWithdraw()">Confirmar</button>
-        <button onclick="goBack()">Cancelar</button>
+        <button onclick="goBack()">Cancelar</button><!--BOTON DE CANCELAR-->
     </div>
-
+<!--ARCHIVOS JS-->
 <script src="cajero.js"></script>
-
 </body>
 </html>
