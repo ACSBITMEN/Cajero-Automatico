@@ -11,7 +11,7 @@ function selectAccount(index) {
     selectedAccount = accounts[index];
     document.getElementById("accounts").style.display = "none";
     document.getElementById("login").style.display = "block";
-    document.getElementById("titulo").textContent = "WELCOME " + selectedAccount.nombre + " TO BANK SS";
+    document.getElementById("titulo").textContent = "WELCOME " + selectedAccount.nombre + " TO SS BANK";
 }
 
 /* Funcion que solo muestra la seccion LOGIN*/
@@ -48,6 +48,12 @@ function confirmDeposit() {
   selectedAccount.saldo += amount;
   document.getElementById("deposit").style.display = "none";
   document.getElementById("balance").style.display = "block";
+  document.getElementById("oldAmountH3").style.display = "block";
+  document.getElementById("oldAmount").style.display = "inline";
+  document.getElementById("Amountwithdrawn").style.display = "inline";
+  document.getElementById("Amountwithdrawn").style.color = "#00f667";
+  document.getElementById("Amountwithdrawn").textContent = " +" + amount
+  document.getElementById("oldAmount").textContent = selectedAccount.saldo - amount;
   document.getElementById("balanceAmount").textContent = selectedAccount.saldo;
 }
 
@@ -79,6 +85,7 @@ function confirmWithdraw() {
   document.getElementById("oldAmount").style.display = "block";
   document.getElementById("oldAmount").style.display = "inline";
   document.getElementById("Amountwithdrawn").style.display = "inline";
+  document.getElementById("Amountwithdrawn").style.color = "#ff3232";
   document.getElementById("Amountwithdrawn").textContent = " -" + amount
   document.getElementById("oldAmount").textContent = selectedAccount.saldo + amount;
   document.getElementById("balanceAmount").textContent = selectedAccount.saldo;
@@ -106,5 +113,5 @@ function goBackIndex() {
   document.getElementById("oldAmountH3").style.display = "none";
   document.getElementById("oldAmount").style.display = "none";
   document.getElementById("Amountwithdrawn").style.display = "none";
-  document.getElementById("titulo").textContent = "WELCOME TO BANK SS";
+  document.getElementById("titulo").textContent = "WELCOME TO SS BANK";
 }
