@@ -1,12 +1,12 @@
-### Virtual ATM
+## Virtual ATM
 
 Un proyecto FlashCode, para poner en practica las enseñanzas de DEVF; consiste en realizar el siguiente proyecto:
 
 
-# Enlace de Git Pages :fa-location-arrow:
+### Enlace de Git Pages
 `<link>` : <https://acsbitmen.github.io/Cajero-Automatico/>
 
-:fa-lock: Password: 1234
+Password: 1234
 
 ![](https://i.ibb.co/tpHWZV6/Example-Visual.png)
 
@@ -22,6 +22,4 @@ Retirar Monto.
 - Al seleccionar retirar monto, el usuario debe escribir el monto a retirar. Al retirar el monto, debe mostrarle al usuario el monto retirado y el nuevo saldo total.
 - Como regla de negocio, una cuenta no puede retirar más de $990 y menos de $10. Es necesario hacer las validaciones pertinentes para que no se rompa esta regla de negocio.
 
-
-:fa-heart: Made in Colombian
-:fa-github: Creado por Andrés Suárez Bully
+Creado por Andrés Suárez Bully
