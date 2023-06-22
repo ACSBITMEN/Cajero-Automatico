@@ -4,7 +4,7 @@ Un proyecto FlashCode, para poner en practica las enseñanzas de DEVF; consiste 
 
 
 ### Enlace de GitHub Pages
-`<link>` : <https://acsbitmen.github.io/Cajero-Automatico/>
+`<link>` : <a Target="_blank" href="https://acsbitmen.github.io/Cajero-Automatico/">https://acsbitmen.github.io/Cajero-Automatico/</a>
 
 Password: 1234
 
