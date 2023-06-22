@@ -3,7 +3,7 @@
 Un proyecto FlashCode, para poner en practica las enseñanzas de DEVF; consiste en realizar el siguiente proyecto:
 
 
-### Enlace de Git Pages
+### Enlace de GitHub Pages
 `<link>` : <https://acsbitmen.github.io/Cajero-Automatico/>
 
 Password: 1234
